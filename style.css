@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+}
+.containar{
+    font-size: 10rem;
+    padding: 5rem;
+    background:url("color.jpg") no-repeat;
+    background-size: 1200px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: move 5s linear infinite;
+}
+ @keyframes move{
+     0%{
+         background-position: 10% 30%;
+     }
+     100%{
+        background-position: 100% 70%;
+    }
+ }
